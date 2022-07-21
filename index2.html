@@ -84,22 +84,26 @@
 
         .container2{
             margin-top: 4vw;
-           display: flex;
            justify-content: center;
+           align-items: center;
         }
         .contains2{
-            margin: 0vw 1vw 1vw 0vw;
+            margin: 1vw 1vw 1vw -4.5vw;
             /* background-color:antiquewhite; */
-            display: flex;
-            border-radius: 10px;         
+             display: flex; 
+             width: 80vw;
+            border-radius: 10px; 
+            justify-content: space-between;        
         }
 
         .contain2{
-            width: 18vw;
-            justify-content: space-between;
-            
+          width:20vw ;
+         
+           justify-content:space-between;
+               
             /* border: 1px solid red; */
         }
+       
         /* .margin-container-12{
             
             margin: 1vw 1vw 1vw 1vw;
@@ -171,7 +175,8 @@
             text-align: center;
             text-decoration: none;
             padding: 1vw 1vw 1vw 1vw;
-            border-radius: 5px;           
+            border-radius: 5px;
+                      
         }
        
         /* .margin-container-22 img{
@@ -234,21 +239,44 @@
         margin-right: 5vw;
         font-size: 1vw;
        }
-
-       .viewall{
-        visibility: hidden;
+       aside{
+        display: flex;
+        gap:4px;
        }
-      
+       .time{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        row-gap: .5vw;
+       }
+       aside ,img{
+        width:1vw ;
+        margin-left: 0vw;
+        margin-top: 2vw;
+       }
        @media screen and (max-width:687px) {
+
+        aside{
+        display: flex;
+        gap:.15vw;
         
-        .viewall{
-        visibility:visible;
        }
-       .viewall a{
-        width:14vw;
-        height: 3vw;
-        font-size: 2vw;
+       aside, img{
+        width: 1vw;
+        margin-left: 9vw;
+        margin-top: 5vw;
        }
+
+        .time{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        row-gap: 8vw;
+       }
+       .time h1{
+        font-size: 4vw;
+       }
+
 
         .contains{
             width: 100vw;
@@ -269,8 +297,8 @@
         .contain2 p{
             font-size: 3vw;
         }
-        .contain2 img{
-            width: 50vw;
+        .contain2 ,img{
+            width: 1vw;
           
             
             
@@ -312,9 +340,7 @@
 
         }
        
-        .items .item{
-            font-size: 15px;
-        }
+      
 
         
 
@@ -360,13 +386,33 @@
         
     }
        @media only screen and (min-width: 688px) and (max-width:992px){
+
+        aside{
+        display: flex;
+        gap:.75vw;
+       
+        
+       }
+       aside, img{
+        width: 1vw;
+        margin-left: 0vw;
+        margin-top: 10vw;
+       }
+
+        .time{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        row-gap: 8vw;
+       }
+       .time h1{
+        font-size: 4vw;
+       }
         .container{
           margin-left: 210px;
           margin-right: 210px;
         }
-        .items .item{
-            font-size: 15px;
-        }
+       
 
         .contains{
             width: 90vw;
@@ -500,221 +546,131 @@
 
             <article class="contains2">
 
-            <div class="contain2 margin-container-23">
+            <div class=" view contain2 margin-container-23">
                 
                 <div style="background-color:black ;" class=" border-contain2 item-aligns">
-                    <a class="flex-item" style="background-color: white; color:black" href="http://">Upcomming Match</a>
+                    <a style="color: white; background-color: red;"; class="flex-item"  href="http://">Upcomming Match</a>
                     <a class="flex-item" style="background-color: white; color:black" href="http://">All Group</a>
-                    <a class="flex-item" href="http://">Blog </a>
+                    <a style="color:black; background-color: white;"; class="flex-item" href="http://">Blog </a>
 
                 </div>              
             </div>
 
 
             
-            <div class="contain22 margin-container-22">
+            <div class=" view contain22 margin-container-22">
 
                 <div class="contain2">
 
                 <div  class="border-contain2">
-                    <img style="padding:0px 0px 0px 0px; margin: 0px ;width:14vw;" src="assets/Blog Image.png" alt="">         
-                <a style="padding:5px 5px 5px 5px; width:7vw; background-color: #FFFFFF; color: black; border: 1px solid black;margin-bottom: 10px;" href="">Transfer</a>
+              <aside>
+                    <img class="img-class" style="padding:0px 0px 0px 0px; margin: 0px ;width:10vw;" src="assets/germany Flag.png" alt="">
+                    <h1 class="img-class">Vs</h1> 
+                    <img class="img-class" style="padding:0px 0px 0px 0px; margin: 0px ;width:10vw;" src="assets/Flag.png" alt="">        
+             </aside>
                 <br>
-                <p class="paragraph-text2">Transfer Live: Chlesea in talks over Kimpenbe transfer</p> 
+                <br>
+            <div class="time">
+                <h1 class="paragraph-text2">Germany VS France </h1>
+                <p class="paragraph-text2">April 01, 2023, 1.00 AM</p> 
 
-
-
-
-
-            <div class="items">
-                <div class="item"><i class="fa-regular fa-clock"></i></div>
-                <div class="item">10hr</div>
-                <div class="item"><i class="fa-regular fa-message"></i></div>
-                <div class="item">23</div>
             </div>
 
                 </div> 
                 </div>  
 
-                <div class="contain2">
-                
-                    <div  class="border-contain2">
-                        <img style="padding:0px 0px 0px 0px; margin: 0px ;width:14vw;" src="assets/Blog Image.png" alt="">         
-                    <a style="padding:.5vw .5vw .5vw .5vw; width:7vw; background-color: #FFFFFF; color: black; border: 1px solid black;margin-bottom: 10px;" href="">Transfer</a>
-                    <br>
-                    <p class="paragraph-text2">Transfer Live: Chlesea in talks over Kimpenbe transfer</p> 
-                    <div class="items">
-                        <div class="item"><i class="fa-regular fa-clock"></i></div>
-                        <div class="item">10hr</div>
-                        <div class="item"><i class="fa-regular fa-message"></i></div>
-                        <div class="item">23</div>
-                    </div>
-    
-                    </div>              
-                </div>
 
                 <div class="contain2">
-                
-                    <div  class="border-contain2">
-                        <img style="padding:0px 0px 0px 0px; margin: 0px ;width:14vw;" src="assets/Blog Image.png" alt="">         
-                    <a style="padding:.5vw .5vw .5vw .5vw; width:7vw; background-color: #FFFFFF; color: black; border: 1px solid black;margin-bottom: 10px;" href="">Transfer</a>
-                    <br>
-                    <p class="paragraph-text2">Transfer Live: Chlesea in talks over Kimpenbe transfer</p> 
-                    <div class="items">
-                        <div class="item"><i class="fa-regular fa-clock"></i></div>
-                        <div class="item">10hr</div>
-                        <div class="item"><i class="fa-regular fa-message"></i></div>
-                        <div class="item">23</div>
-                    </div>
-    
-                    </div>              
-                </div>
-                <div class="contain2">
-                
-                    <div  class=" border-contain2">
-                        <img style="padding:0px 0px 0px 0px; margin: 0px ;width:14vw;" src="assets/Blog Image.png" alt="">         
-                    <a style="padding:.5vw .5vw .5vw .5vw; width:7vw; background-color: #FFFFFF; color: black; border: 1px solid black;margin-bottom: 10px;" href="">Transfer</a>
-                    <br>
-                    <p class="paragraph-text2">Transfer Live: Chlesea in talks over Kimpenbe transfer</p> 
-                    <div class="items">
-                        <div class="item"><i class="fa-regular fa-clock"></i></div>
-                        <div class="item">10hr</div>
-                        <div class="item"><i class="fa-regular fa-message"></i></div>
-                        <div class="item">23</div>
-                    </div>
-    
-                    </div>              
-                </div>
-                <div class="contain2 ">
-                
-                    <div  class=" border-contain2">
-                        <img style="padding:0px 0px 0px 0px; margin: 0px ;width:14vw;" src="assets/Blog Image.png" alt="">         
-                    <a style="padding:.5vw .5vw .5vw .5vw; width:7vw; background-color: #FFFFFF; color: black; border: 1px solid black;margin-bottom: 10px;" href="">Transfer</a>
-                    <br>
-                    <p class="paragraph-text2">Transfer Live: Chlesea in talks over Kimpenbe transfer.</p> 
-                    <div class="items">
-                        <div class="item"><i class="fa-regular fa-clock"></i></div>
-                        <div class="item">10hr</div>
-                        <div class="item"><i class="fa-regular fa-message"></i></div>
-                        <div class="item">23</div>
-                    </div>
-    
-                    </div>              
-                </div> 
-                <div class="contain2 ">
-                
-                    <div  class=" border-contain2">
-                        <img style="padding:0px 0px 0px 0px; margin: 0px ;width:14vw;" src="assets/Blog Image.png" alt="">         
-                    <a style="padding:.5vw .5vw .5vw .5vw; width:7vw; background-color: #FFFFFF; color: black; border: 1px solid black;margin-bottom: 10px;" href="">Transfer</a>
-                    <br>
-                    <p class="paragraph-text2">Transfer Live: Chlesea in talks over Kimpenbe transfer.</p> 
-                    <div class="items">
-                        <div class="item"><i class="fa-regular fa-clock"></i></div>
-                        <div class="item">10hr</div>
-                        <div class="item"><i class="fa-regular fa-message"></i></div>
-                        <div class="item">23</div>
-                    </div>
-    
-                    </div>              
-                </div>  
-                <div class="contain2 ">
-                
-                    <div  class=" border-contain2">
-                        <img style="padding:0px 0px 0px 0px; margin: 0px ;width:14vw;" src="assets/Blog Image.png" alt="">         
-                    <a style="padding:.5vw .5vw .5vw .5vw; width:7vw; background-color: #FFFFFF; color: black; border: 1px solid black;margin-bottom: 10px;" href="">Transfer</a>
-                    <br>
-                    <p class="paragraph-text2">Transfer Live: Chlesea in talks over Kimpenbe transfer.</p> 
-                    <div class="items">
-                        <div class="item"><i class="fa-regular fa-clock"></i></div>
-                        <div class="item">10hr</div>
-                        <div class="item"><i class="fa-regular fa-message"></i></div>
-                        <div class="item">23</div>
-                    </div>
-    
-                    </div>              
-                </div> 
-                <div class="contain2 ">
-                
-                    <div  class=" border-contain2">
-                        <img style="padding:0px 0px 0px 0px; margin: 0px ;width:14vw;" src="assets/Blog Image.png" alt="">         
-                    <a style="padding:.5vw .5vw .5vw .5vw; width:7vw; background-color: #FFFFFF; color: black; border: 1px solid black;margin-bottom: 10px;" href="">Transfer</a>
-                    <br>
-                    <p class="paragraph-text2">Transfer Live: Chlesea in talks over Kimpenbe transfer.</p> 
-                    <div class="items">
-                        <div class="item"><i class="fa-regular fa-clock"></i></div>
-                        <div class="item">10hr</div>
-                        <div class="item"><i class="fa-regular fa-message"></i></div>
-                        <div class="item">23</div>
-                    </div>
-    
-                    </div>              
-                </div> 
-                <div class="contain2 ">
-                
-                    <div  class=" border-contain2">
-                        <img style="padding:0px 0px 0px 0px; margin: 0px ;width:14vw;" src="assets/Blog Image.png" alt="">         
-                    <a style="padding:.5vw .5vw .5vw .5vw; width:7vw; background-color: #FFFFFF; color: black; border: 1px solid black;margin-bottom: 10px;" href="">Transfer</a>
-                    <br>
-                    <p class="paragraph-text2">Transfer Live: Chlesea in talks over Kimpenbe transfer</p> 
-                    <div class="items">
-                        <div class="item"><i class="fa-regular fa-clock"></i></div>
-                        <div class="item">10hr</div>
-                        <div class="item"><i class="fa-regular fa-message"></i></div>
-                        <div class="item">23</div>
-                    </div>
-    
-                    </div>              
-                </div>
-                <div class="contain2 ">
-                
-                    <div  class=" border-contain2">
-                        <img style="padding:0px 0px 0px 0px; margin: 0px ;width:14vw;" src="assets/Blog Image.png" alt="">         
-                    <a style="padding:.5vw .5vw .5vw .5vw; width:7vw; background-color: #FFFFFF; color: black; border: 1px solid black;margin-bottom: 10px;" href="">Transfer</a>
-                    <br>
-                    <p class="paragraph-text2">Transfer Live: Chlesea in talks over Kimpenbe transfer.</p> 
-                    <div class="items">
-                        <div class="item"><i class="fa-regular fa-clock"></i></div>
-                        <div class="item">10hr</div>
-                        <div class="item"><i class="fa-regular fa-message"></i></div>
-                        <div class="item">23</div>
-                    </div>
-    
-                    </div>              
-                </div> 
-                <div class="contain2 ">
-                
-                    <div  class=" border-contain2">
-                        <img style="padding:0px 0px 0px 0px; margin: 0px ;width:14vw;" src="assets/Blog Image.png" alt="">         
-                    <a style="padding:.5vw .5vw .5vw .5vw; width:7vw; background-color: #FFFFFF; color: black; border: 1px solid black;margin-bottom: 10px;" href="">Transfer</a>
-                    <br>
-                    <p class="paragraph-text2">Transfer Live: Chlesea in talks over Kimpenbe transfer.</p> 
-                    <div class="items">
-                        <div class="item"><i class="fa-regular fa-clock"></i></div>
-                        <div class="item">10hr</div>
-                        <div class="item"><i class="fa-regular fa-message"></i></div>
-                        <div class="item">23</div>
-                    </div>
-    
-                    </div>              
-                </div>
-                <div class="contain2 ">
-                
-                    <div  class=" border-contain2">
-                        <img style="padding:0px 0px 0px 0px; margin: 0px ;width:14vw;" src="assets/Blog Image.png" alt="">         
-                    <a style="padding:.5vw .5vw .5vw .5vw; width:7vw; background-color: #FFFFFF; color: black; border: 1px solid black;margin-bottom: 10px;" href="">Transfer</a>
-                    <br>
-                    <p class="paragraph-text2">Transfer Live: Chlesea in talks over Kimpenbe transfer</p> 
-                    <div class="items">
-                        <div class="item"><i class="fa-regular fa-clock"></i></div>
-                        <div class="item">10hr</div>
-                        <div class="item"><i class="fa-regular fa-message"></i></div>
-                        <div class="item">23</div>
-                    </div>
-    
-                    </div>              
-                </div>
 
-             
+                    <div  class="border-contain2">
+                  <aside>
+                        <img class="img-class" style="padding:0px 0px 0px 0px; margin: 0px ;width:10vw;" src="assets/germany Flag.png" alt="">
+                        <h1 class="img-class">Vs</h1> 
+                        <img class="img-class" style="padding:0px 0px 0px 0px; margin: 0px ;width:10vw;" src="assets/Flag.png" alt="">        
+                 </aside>
+                    <br>
+                    <br>
+                <div class="time">
+                    <h1 class="paragraph-text2">Germany VS France </h1>
+                    <p class="paragraph-text2">April 01, 2023, 1.00 AM</p> 
+    
+                </div>
+    
+                    </div> 
+                    </div>  
+
+                    <div class="contain2">
+
+                        <div  class="border-contain2">
+                      <aside>
+                            <img class="img-class" style="padding:0px 0px 0px 0px; margin: 0px ;width:10vw;" src="assets/germany Flag.png" alt="">
+                            <h1 class="img-class">Vs</h1> 
+                            <img class="img-class" style="padding:0px 0px 0px 0px; margin: 0px ;width:10vw;" src="assets/Flag.png" alt="">        
+                     </aside>
+                        <br>
+                        <br>
+                    <div class="time">
+                        <h1 class="paragraph-text2">Germany VS France </h1>
+                        <p class="paragraph-text2">April 01, 2023, 1.00 AM</p> 
+        
+                    </div>
+        
+                        </div> 
+                        </div>  
+                        <div class="contain2">
+
+                            <div  class="border-contain2">
+                          <aside>
+                                <img class="img-class" style="padding:0px 0px 0px 0px; margin: 0px ;width:10vw;" src="assets/germany Flag.png" alt="">
+                                <h1 class="img-class">Vs</h1> 
+                                <img class="img-class" style="padding:0px 0px 0px 0px; margin: 0px ;width:10vw;" src="assets/Flag.png" alt="">        
+                         </aside>
+                            <br>
+                            <br>
+                        <div class="time">
+                            <h1 class="paragraph-text2">Germany VS France </h1>
+                            <p class="paragraph-text2">April 01, 2023, 1.00 AM</p> 
+            
+                        </div>
+            
+                            </div> 
+                            </div>  
+                            <div class="contain2">
+
+                                <div  class="border-contain2">
+                              <aside>
+                                    <img class="img-class" style="padding:0px 0px 0px 0px; margin: 0px ;width:10vw;" src="assets/germany Flag.png" alt="">
+                                    <h1 class="img-class">Vs</h1> 
+                                    <img class="img-class" style="padding:0px 0px 0px 0px; margin: 0px ;width:10vw;" src="assets/Flag.png" alt="">        
+                             </aside>
+                                <br>
+                                <br>
+                            <div class="time">
+                                <h1 class="paragraph-text2">Germany VS France </h1>
+                                <p class="paragraph-text2">April 01, 2023, 1.00 AM</p> 
+                
+                            </div>
+                
+                                </div> 
+                                </div>  
+                                <div class="contain2">
+
+                                    <div  class="border-contain2">
+                                  <aside>
+                                        <img class="img-class" style="padding:0px 0px 0px 0px; margin: 0px ;width:10vw;" src="assets/germany Flag.png" alt="">
+                                        <h1 class="img-class">Vs</h1> 
+                                        <img class="img-class" style="padding:0px 0px 0px 0px; margin: 0px ;width:10vw;" src="assets/Flag.png" alt="">        
+                                 </aside>
+                                    <br>
+                                    <br>
+                                <div class="time">
+                                    <h1 class="paragraph-text2">Germany VS France </h1>
+                                    <p class="paragraph-text2">April 01, 2023, 1.00 AM</p> 
+                    
+                                </div>
+                    
+                                    </div> 
+                                    </div>         
            
             </div>
         
@@ -724,7 +680,6 @@
             </article>
             
         </section>
-       <div class="viewall" style="width: 40vw; margin: 10px 0px 80px 0px; display: flex;justify-content: center; margin-left: 15vw;"><a style="text-decoration: none; background-color: red; display: flex;justify-content: center; color: #FFFFFF;" href="">view all</a></div>
     </main>
     <footer >
         <div  class="goal">
