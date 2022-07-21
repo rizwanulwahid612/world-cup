@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 400px;
+            margin-top: 350px;
+            margin-left: 10px;
+            margin-bottom: -100px;
+            
+        }
+        .field:hover .play{
+            
+            transform: rotate(-50deg);
+            transform-origin: top left ;           
+        }
+        .play{
+            transition: transform .1s ease-in;
+            
+        }
+.field{
+    border: 1px solid;
+    background-color: green;
+    padding-bottom: -500px;
+}
+.field:hover .ball{
+    transform: translate(300px, -500px);
+}
+.ball{
+    width:100px;
+    height: 100px;
+    background-color: rgb(236, 214, 214);
+    border-radius: 50px;
+   
+    position: relative;
+    left: 400px;
+    top:-300px;
+    transition: transform .2s ease-in-out 0.01s;
+}
+    </style>
+</head>
+<header>
+    <nav >
+        <ul style="background-color: black ; width:97vw; display:flex; justify-content: space-around ; align-items: center;">
+           <li ><a class="nav-icon" style="text-decoration:none ; font-size: 16px; color: #FFFFFF;" href="index.html">Home</a></li>
+           <li ><a class="nav-icon" style="text-decoration:none ; font-size: 16px; color: #FFFFFF;" href="index2.html">Blog Page</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="field">
+    <img style="background-color: green;" class="play" src="./football.png" alt="">
+    <div class="ball"></div>
+</div>
+</body>
+</html>
